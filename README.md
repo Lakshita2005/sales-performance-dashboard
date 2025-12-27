@@ -1,107 +1,88 @@
-📊 Sales Analytics & KPI Monitoring Dashboard
-🔍 Project Overview
+# 📊 Sales Analytics & KPI Monitoring Dashboard
 
-This project focuses on building an end-to-end Sales Performance Analytics solution using MySQL, Python, and Power BI.
+## 🔍 Project Overview
+This project focuses on building an end-to-end **Sales Performance Analytics solution** using **MySQL, Python, and Power BI**.  
 The objective is to enable business stakeholders to track KPIs, analyze trends, and gain actionable insights from sales transaction data.
 
-🛠️ Tools & Technologies
+---
 
-Python (Pandas) – Data cleaning and preprocessing
+## 🛠️ Tools & Technologies
+- **Python (Pandas)** – Data cleaning and preprocessing  
+- **MySQL** – Data storage, KPI queries, and views  
+- **Power BI** – Data modeling, visualization, and dashboarding  
 
-MySQL – Data storage, KPI queries, and views
+---
 
-Power BI – Data modeling, visualization, and dashboarding
+## 📂 Dataset
+- ~10,000+ sales transaction records  
+- Key attributes include:
+  - Order Date  
+  - Region  
+  - Category & Sub-Category  
+  - Sales, Quantity, Discount, Profit  
 
-📂 Dataset
+---
 
-~10,000+ sales transaction records
+## ⚙️ Project Workflow
 
-Key attributes: Order Date, Region, Category, Sub-Category, Sales, Quantity, Discount, Profit
+### 1️⃣ Data Cleaning (Python)
+- Converted date columns to proper datetime format  
+- Verified missing and duplicate records  
+- Exported cleaned data for database ingestion  
 
-⚙️ Project Workflow
+### 2️⃣ Database Design (MySQL)
+- Created structured tables for sales data  
+- Built SQL **views** for KPIs:
+  - Overall business KPIs  
+  - Monthly sales & profit trends  
+  - Region-wise performance  
+  - Category & sub-category analysis  
 
-Data Cleaning (Python)
+### 3️⃣ KPI Development
+- Total Sales, Total Profit, Total Orders, Quantity  
+- Profit Margin (%)  
+- Time-based trends (monthly)  
+- Regional and category-wise revenue contribution  
 
-Converted date columns to proper datetime format
+### 4️⃣ Dashboard Development (Power BI)
+- Connected Power BI directly to MySQL KPI views  
+- Designed an interactive dashboard including:
+  - KPI cards  
+  - Monthly trend line charts  
+  - Region & category bar/column charts  
+  - Detailed sub-category performance table  
+- Implemented slicers for time and region-based analysis  
 
-Verified missing and duplicate records
+---
 
-Exported cleaned data for database ingestion
+## 📈 Key Insights
+- Identified top-performing regions and categories  
+- Analyzed monthly revenue and profit trends  
+- Highlighted high and low-performing sub-categories  
+- Enabled quick executive-level performance monitoring  
 
-Database Design (MySQL)
+---
 
-Created structured tables for sales data
+## 🖼️ Dashboard Preview
 
-Built SQL views for KPIs:
+### 🔹 Overall Dashboard View
+<img width="1308" height="734" alt="dashboard_overview" src="https://github.com/user-attachments/assets/96f3ce8f-cf64-4ba4-9793-9d4ab4673df4" />
 
-Overall business KPIs
 
-Monthly sales & profit trends
+### 🔹 Filtered View (Using Slicers)
+<img width="1308" height="730" alt="dashboard_filtered" src="https://github.com/user-attachments/assets/b0ab94d7-a9a0-4ab5-aea1-b7f47b3ead7e" />
 
-Region-wise performance
+---
 
-Category & sub-category analysis
-
-KPI Development
-
-Total Sales, Profit, Orders, Quantity
-
-Profit Margin (%)
-
-Time-based trends (monthly)
-
-Regional and category-wise revenue contribution
-
-Dashboard Development (Power BI)
-
-Connected Power BI directly to MySQL views
-
-Designed an interactive dashboard with:
-
-KPI cards
-
-Trend line charts
-
-Bar & column charts
-
-Detailed sub-category table
-
-Implemented slicers for time and region-based analysis
-
-📈 Key Insights
-
-Identified top-performing regions and categories
-
-Analyzed monthly revenue and profit trends
-
-Highlighted high and low-performing sub-categories
-
-Enabled quick executive-level performance monitoring
-
-🖼️ Dashboard Preview
-
-<img width="1308" height="734" alt="dashboard_overview" src="https://github.com/user-attachments/assets/872d746d-07f3-499b-93fb-9bbd3ef80946" />
-
-Overall Dashboard View
-
-<img width="1308" height="730" alt="dashboard_filtered" src="https://github.com/user-attachments/assets/685f7004-f76c-44d4-998c-58280c4b162e" />
-
-Filtered View using slicers
-
-🚀 Business Value
-
+## 🚀 Business Value
 This dashboard enables:
+- Faster decision-making through centralized KPIs  
+- Performance tracking across regions and product categories  
+- Clear visibility into sales and profitability trends  
 
-Faster decision-making through centralized KPIs
+---
 
-Performance tracking across regions and categories
-
-Clear visibility into sales and profitability trends
-
-📌 Future Enhancements
-
-Add forecasting for sales trends
-
-Automate data refresh using scheduled pipelines
-
-Include customer-level analysis
+## 📌 Future Enhancements
+- Add sales forecasting models  
+- Automate data refresh pipelines  
+- Extend analysis to customer-level insights  
